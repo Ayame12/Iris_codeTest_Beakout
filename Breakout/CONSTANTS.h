@@ -11,6 +11,19 @@ enum POWERUPS
     none
 };
 
+enum BUTTON_ACTIONS
+{
+    REPLAY
+};
+
+enum STATES 
+{ 
+    GAME, 
+    POST_GAME, 
+    RESET,
+    OPTIONS 
+};
+
 // Window settings
 constexpr unsigned int WINDOW_WIDTH = 800;
 constexpr unsigned int WINDOW_HEIGHT = 600;
