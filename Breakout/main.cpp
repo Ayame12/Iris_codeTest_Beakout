@@ -2,8 +2,6 @@
 #include "GameManager.h"
 #include <iostream>
 
-#include "states.h"
-
 int main()
 {
     
@@ -11,7 +9,6 @@ int main()
     sf::RenderWindow window(sf::VideoMode(1000, 800), "Breakout");
 
     sf::View view(sf::FloatRect(0, 0, 1000, 800));
-    window.setView(view);
 
     GameManager gameManager(&window,&view);
     gameManager.initialize();
@@ -34,7 +31,8 @@ int main()
 
             gameManager.update(deltaTime);
             window.clear();
-            gameManager.render();
+            gameManager.render(); 
+            window.setView(view);
             window.display();
     }
 

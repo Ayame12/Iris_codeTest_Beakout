@@ -29,6 +29,9 @@ constexpr unsigned int WINDOW_WIDTH = 800;
 constexpr unsigned int WINDOW_HEIGHT = 600;
 constexpr const char* WINDOW_TITLE = "Game";
 
+constexpr int VIEW_CENTER_X = 500;
+constexpr int VIEW_CENTER_Y = 400;
+
 // Paddle settings
 constexpr float PADDLE_WIDTH = 150.0f;
 constexpr float PADDLE_HEIGHT = 20.0f;

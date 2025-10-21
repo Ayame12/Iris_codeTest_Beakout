@@ -9,8 +9,6 @@
 #include "UI.h"
 #include "Button.h"
 
-#include "states.h"
-
 class GameManager {
 public:
     GameManager(sf::RenderWindow* window, sf::View* view);
@@ -39,7 +37,7 @@ private:
     bool _levelComplete;
     std::pair<POWERUPS, float> _powerupInEffect;
 
-    float _maxShakeTimer = 20;
+    float _maxShakeTimer = 0.5;
     float _shakeTimer;
 
     sf::Font _font;

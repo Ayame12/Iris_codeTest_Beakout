@@ -111,14 +111,14 @@ void GameManager::update(float dt)
     {
         _shakeTimer -= dt;
 
-        float x = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / 10))-5;
-        float y = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / 10))-5;
+        float x = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / 5))-2.5;
+        float y = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / 5))-2.5;
 
-        _view->move(10000000000, 500);
+        _view->setCenter(x + VIEW_CENTER_X, y + VIEW_CENTER_Y);
     }
     else if(_shakeTimer <= 0)
     {
-        _view->setCenter(0, 0);
+        _view->setCenter(VIEW_CENTER_X, VIEW_CENTER_Y);
     }
 }
 
